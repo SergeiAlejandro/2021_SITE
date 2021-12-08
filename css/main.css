@@ -9,10 +9,6 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 /* ---------------------------------- text ------------------------------------  */
@@ -28,9 +24,6 @@ a{
     color: rgb(228, 228, 228);
   }
 
-
-
-
   p img {
     margin: 0;
   }
@@ -44,27 +37,23 @@ a{
     color: #d44724;
   }
 
-
   /* -------------------------grid layout for full site  -------------------------- */
 .container_website {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 COLUMNS  */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* 5 ROWS  */
     grid-template-rows: 50px 100px auto auto 50px;
-    grid-column-gap: 10px
-    grid-row-gap: 10px
-    justify-items: stretch
-    align-items: stretch
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
  }
 
  /*  ---------------------------------- logo  ---------------------------------------*/
 .logo_img {
     position: absolute;
     top: 2rem;
-    left: 0;
-    width: 100%;
-    height: 78px;
-    text-align: center;
-    z-index: 100;
 }
 
 .logo_id{
@@ -77,10 +66,9 @@ a{
 /* ---------------------------------- navigation bar ---------------------------------*/
 
 #nav_id{
-    justify-content: right;
     list-style: none;
     margin-right: 10%;
-    grid-column: 3;
+    grid-column: 4;
     grid-row: 2/3;
     flex-direction: column;
 }
@@ -94,16 +82,15 @@ a{
     list-style: none;
     margin-left: 0;
     margin-top: 18px;
-  }
-  
-  .nav li {
-    display: inline-block;
-    padding-left: 0;
+    font-size: 20px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #ffe600;
   }
   
   .nav li a {
     display: block;
-    line-height: calc(78px - (18px * 2));
+    line-height: 5px;
   }
 
   #nav_id {
@@ -131,32 +118,19 @@ a{
   #nav_id a:active {
     color: #ffffff;
   }
-  
-  #nav_id .current a {
-    color: #ffffff;
-  }
+
 
 /* ------------------------------------ sections ---------------------------------- */
 .container_sections {
-    height: 100%;
-    overflow: scroll;
+    /* height: 100%; */
+    /* overflow: scroll; */
 
-    grid-column: 1/-4;
-    grid-row: 3/5;
+    /* grid-column: 1/-4;
+    grid-row: 3/5; */
 }
 
-/* .section_01, section_02 {
-    /* Take full size */
-    height: 100%;
-    width: 100%;
-
-    /* Stick to the top */
-    position: sticky;
-    top: 0;
-} */
-
 /* ------------------------ intro content ------------------------------------ */
-.intro-content {
+/* .intro-content {
     height: 100%;
     max-width: 1140px;
     padding-top: 20vh;
@@ -198,14 +172,21 @@ a{
     height: 100%;
     background-color: rgb(255, 255, 255);
     opacity: .5;
-  }
+  } */
 
   /* ----------------------------- footer ----------------------------------- */
   
+  .footer {
+    height: 50px;
+    margin-top: -50px;
+
+    grid-column: 1/3;
+    grid-row: 5/-6;
+  }
 
 
   /* ------------------------- button to go back up ----------------------------- */
-  .back_to_top {
+  /* .back_to_top {
     position: absolute;
     top: -1px;
     right: 6rem;
@@ -274,10 +255,18 @@ a{
     left: calc(30px + 15px);
     top: -165px;
   }
-
+ */
 
   /* ----------------------------- about me ---------------------------------- */
-  .section_01 {
+  .about_me{
+      grid-column: 1/2;
+      grid-row: 4/5;
+      padding-top: 100px;
+      padding-left: 50px;
+  }
+  
+  
+  /* .section_01 {
     padding-top: 19.2rem;
     padding-bottom: 16.8rem;
     background-color: #ffffff;
@@ -312,22 +301,11 @@ a{
   
   .about-me__buttons .column:last-child {
     padding-left: 32px;
-  }
+  } */
 
   /* ------------------ row and colums ------------------------------ */
- .footer {
-    width: 89%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
 
-.footer .row {
+/* .row {
     width: auto;
     max-width: none;
     margin-left: -20px;
@@ -344,5 +322,65 @@ a{
 .collapse > .column,
 .column.collapse {
     padding: 0;
+} */
+
+/* -------------------------- side panel --------------------- */
+.left-bar {
+    left: 0;
+    top: 0;
+    background: #ffe600;
+    width: 80px;
+    height: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.fixed-bar {
+    position: fixed;
+    z-index: 1000;
+}
+
+.left-bar .top-icon {
+    background: rgb(199, 199, 199);
+    /* height: 100px; */
+    width: 200px;
+}
+
+.left-bar .top-icon, .left-bar .bottom-icon {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.left-bar .center-text {
+    height: calc(100% - 185px);
+    position: relative;
+}
+
+.left-bar .center-text p {
+    white-space: nowrap;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+    margin-left: 30px;
+}
+
+.left-bar .center-text .medium {
+    font-weight: bold;
+}
+
+#top_logo_size{
+width: 800px;
+padding-left: 20%;
+padding-top: 50%;
+}
+
+#botton_logo_size{
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
 }
 
