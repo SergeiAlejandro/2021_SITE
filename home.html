@@ -16,65 +16,111 @@
 
     <div class="container_website">
 
-        <div id="home"></div>
-        <!--------------------------- logo  ------------------------------->
+        <div id="homeclick"></div>
 
-        <!------------------------ navigation bar  ------------------------->
-        <div class="nav" id="nav_id">
+
+
+
+        <!------------------------------- navigation bar  -------------------------------->
+        <!-- <div class="nav" id="nav_id">
             <ul>
                 <li><a href="#logo_home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>
+                <li><a href="#aboutclick">About</a></li>
+                <li><a href="#contactclick">Contact Me</a></li>
+            </ul>
+        </div> -->
+
+        <div id="button">
+            <div class="nav" id="nav_id">
+            <ul>
+                <li><a href="#homeclick">Home</a></li>
+                <li><a href="#aboutclick">About</a></li>
+                <li><a href="#contactclick">Contact</a></li>
             </ul>
         </div>
-        <!----------------------- navigation bar  --------------------------->
+        </div>
 
-        <!----------------------------- sections ------------------------- -->
-        <div id="about"></div>
-        <div class="about_me">
 
-            <div class="adding-a-line">
-              <h1>ABOUT ME</h1>
+
+
+        <!------------------------------------ about me ----------------------------------->
+            <div id="about"></div>
+            <div class="about_me" id="aboutclick">
+
+                <div>
+                    <h1>/ ABOUT ME</h1>
+                </div>
+
+                <p id="about-us">
+                    Im in BCIS at Mount Royal University.
+                    <br><br>
+                    I havent dont much project lately, but once I got time
+                    I do have plans for the future where I could use my skills
+                    I've obtained thorughout the courses I've taken.
+                    <br><br>
+                    I like producing music, making photoshop, after effects, cinema4D type art,
+                    effects, and videos, I also enjoy learning new things, sing,
+                    play intruments, learn about the future of crypto,
+                    gaming with friends, building computers, designing clothes,
+                    pattern making, and classic art.
+                    <br><br>
+                    <em> also love christmas and halloween, but more christmas.</em>
+                </p>
+
+
+            </div>
+
+        <!--------------------------------- contact me ----------------------------------->
+        
+            <div id="contact"></div>
+            <div class="contact_me" id="contactclick">
+
+                <div>
+                    <h1>/ CONTACT ME</h1>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="feedback-header">
+                      SEND FEEDBACK
+                    </div>
+                    <form class="feedback-body">
+                      <input ,type="email" class="feedback-body__email" placeholder="Email" /><textarea ,type="text" class="feedback-body__message" placeholder="Message"></textarea><button class="feedback-body__submit">SEND</button>
+                    </form>
+                  </div>
+
+
             </div>
         
-            <p id="about-us">
-              We are a group of individuals that would like to explore the world of computer languages and more.
-              <br><br>
-              Computer programming languages allow us to give instructions to a computer in a language the computer understands.
-                Just as many human-based languages exist, there are an array of computer programming languages that programmers
-              can use to communicate with a computer. The portion of the language that a computer can understand is called a
-              “binary.” Translating programming language into binary is known as “compiling.” Each language, from C Language to
-              Python, has Computer programming languages allow us to give instructions to a computer in a language the computer understands.
-              Just as many human-based languages exist, there are an array of computer programming languages that programmers
-            can use to communicate with a computer. The portion of the language that a computer can understand is called a
-            “binary.” Translating programming language into binary is known as “compiling.” Each language, from C Language to
-            Python, has its own distinct features, though many times there are commonalities between programming languages.
-            Computer programming languages allow us to give instructions to a computer in a language the computer understands.
-                Just as many human-based languages exist, there are an array of computer programming languages that programmers
-              can use to communicate with a computer. The portion of the language that a computer can understand is called a
-              “binary.” Translating programming language into binary is known as “compiling.” Each language, from C Language to
-              Python, has its own distinct features, though many times there are commonalities between programming languages.
-              Computer programming languages allow us to give instructions to a computer in a language the computer understands.
-                Just as many human-based languages exist, there are an array of computer programming languages that programmers
-              can use to communicate with a computer. The portion of the language that a computer can understand is called a
-              “binary.” Translating programming language into binary is known as “compiling.” Each language, from C Language to
-              Python, has its own distinct features, though many times there are commonalities between programming languages.
-              Computer programming languages allow us to give instructions to a computer in a language the computer understands.
-                Just as many human-based languages exist, there are an array of computer programming languages that programmers
-              can use to communicate with a computer. The portion of the language that a computer can understand is called a
-              “binary.” Translating programming language into binary is known as “compiling.” Each language, from C Language to
-              Python, has its own distinct features, though many times there are commonalities between programming languages.
-              its own distinct features, though many times there are commonalities between programming languages.
-              <br><br>
-              These languages allow computers to quickly and efficiently process large and complex swaths of information.
-              For example, if a person is given a list of randomized numbers ranging from one to ten thousand and is asked to
-              place them in ascending order, chances are that it will take a sizable amount of time and include some errors.
-              <br><br>
-              There are dozens of programming languages used in the industry today. We’ve compiled overviews of the 4 languages
-              we have learned so far down below.
-        
-          </div>
+        <!---------------------------------- videos ------------------------------------------>
 
+        <div class="about_me_video">
+
+            <div class="vid_title">
+                <h1>/ COLLAGE OF VIDEOS OF INTEREST</h1>
+            </div>
+
+            <div class="vid1">
+                <video class="inactiveLink" id="vid1_size" controls autoplay loop>
+                    <source src="./images/free_video02.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="vid3">
+                <video class="inactiveLink" id="vid3_size" controls autoplay loop>
+                    <source src="./images/free_video04.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="vid2">
+                <video class="inactiveLink" id="vid2_size" controls autoplay loop>
+                    <source src="./images/free_video01.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="vid4">
+                <video class="inactiveLink" id="vid4_size" controls autoplay loop>
+                    <source src="./images/free_video03.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
 
 
 
@@ -83,23 +129,24 @@
         <div class="left-bar fixed-bar" style="opacity: 1;">
             <a href="/" class="top-icon">
                 <a href="#home"><img src="images/logo.png" alt="Logo" id="top_logo_size">
-            </a>
-            <div class="center-text">
-                <p>
-                    <span class="medium">Sergei Alejandro:</span>  The New Vision
-                </p>
-            </div>
-            <div class="bottom-icon">
-                <img src="./images/bottom_logo.png" id="botton_logo_size">
-            </div>
-        </div>
-        <!------------------------------------- side panel  ------------------------------------>
-       
+                </a>
 
-        <!-- <footer> -->
+                <div class="center-text">
+                    <p>
+                        <span class="medium">Sergei Alejandro:</span> The New Vision
+                    </p>
+                </div>
+                <div class="bottom-icon">
+                    <img src="./images/bottom_logo.png" id="botton_logo_size">
+                </div>
+        </div>
+
+
+
+        <!------------------------------------- footer  ------------------------------------>
         <div class="footer">
             <span>© Copyright 2019</span>
-            <span>Made by <a href="#">SergeiAlejandro</a></span>
+            <span>Made by<a href="#">SergeiAlejandro</a></span>
         </div>
 
         <div class="back_to_top">
