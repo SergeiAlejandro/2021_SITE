@@ -4,20 +4,26 @@ html {
 
 /* --------------------------------- body -------------------------------------------- */
 body {
-margin: 0;
-padding: 0;
-font-family: Verdana, Geneva, sans-serif;
-background: url("/images/background.jpg") no-repeat center center fixed;
-background-blend-mode:color-burn;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  background: url("/images/background.jpg") no-repeat center center fixed;
+  background-blend-mode: color-burn;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
--ms-overflow-style: none; /* for Internet Explorer, Edge */
-scrollbar-width: none; /* for Firefox */
-overflow-y: scroll; 
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
 
+    background-color: #c0c0c0c9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  
 }
 
 body::-webkit-scrollbar {
@@ -26,148 +32,141 @@ body::-webkit-scrollbar {
 
 /* ---------------------------------- text ------------------------------------  */
 a {
-margin: 15px;
-color: rgb(255, 255, 255);
-text-decoration: none;
-text-transform: uppercase;
-font-weight: 1000;
+  margin: 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 1000;
 }
 
 a:hover {
-color: rgb(228, 228, 228);
+  color: rgb(228, 228, 228);
 }
 
 p img {
-margin: 0;
+  margin: 0;
 }
 
 p.lead {
-font-family: "Lora", serif;
-font-weight: 300;
-font-size: 2.4rem;
-line-height: 1.833;
-margin-bottom: 3.6rem;
-color: #d44724;
+  font-family: "Lora", serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.833;
+  margin-bottom: 3.6rem;
+  color: #d44724;
 }
-
 
 h1 {
-font-family: "Roboto", sans-serif;
-font-size: 50px;
-text-transform: uppercase;
-letter-spacing: 0.3rem;
-color: rgb(255, 255, 255);
-margin: 0 0 0 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: rgb(255, 255, 255);
+  margin: 0 0 0 4px;
 }
 
-
-em{
+em {
   font-weight: bolder;
-  color:rgb(167, 16, 79);
+  color: rgb(167, 16, 79);
 }
-
 
 /* -------------------------grid layout for full site  -------------------------- */
 .container_website {
-/* display: grid;
+  /* display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 50px 100px auto 1000px auto 50px;
 grid-column-gap: 10px;
 grid-row-gap: 10px; */
-/* justify-items: stretch; */
-/* align-items: stretch; */
+  /* justify-items: stretch; */
+  /* align-items: stretch; */
 
-
-  display: grid; 
-/* grid-auto-flow: row dense;  */
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 10vh 1fr 1fr 1fr 1fr; 
-  gap: 10px 10px; 
-  grid-template-areas:  
-  ". . . ."
-  ". . . ."
-  ". . . ."
-  ". . . ."
-  ". . . ."
-  ". . . .";
-
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 700px 100px 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
 }
 
 /*  ---------------------------------- logo  ---------------------------------------*/
 .logo_img {
-position: absolute;
-top: 2rem;
+  position: absolute;
+  top: 2rem;
 }
 
 .logo_id {
-padding-top: 30px;
-padding-left: 50px;
-grid-column: 1/3;
-grid-row: 2/3;
+  padding-top: 200px;
+  padding-left: 50px;
+  grid-column: 1/3;
+  grid-row: 2/3;
 }
 
 /* ---------------------------------- navigation bar ---------------------------------*/
 
 #nav_id {
-list-style: none;
-margin-right: 10%;
-/* grid-column: 4; */
-/* grid-row: 2/3; */
-flex-direction: column;
-
+  list-style: none;
+  margin-right: 10%;
+  /* grid-column: 4; */
+  /* grid-row: 2/3; */
+  flex-direction: column;
 }
 
 .nav {
-display: inline-block;
+  display: inline-block;
   /* position:fixed; */
-  position:-webkit-sticky;
+  position: -webkit-sticky;
   padding-left: 200%;
-  width:250px;
+  width: 250px;
 
   background-color: rgba(229, 255, 0, 0.781);
-
 }
 
 .nav ul {
-display: inline-block;
-list-style: none;
-margin-left: 0;
-margin-top: 18px;
-font-size: 20px;
-border-style: solid;
-border-width: 5px;
-border-color: #ffffff;
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+  margin-top: 70px;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ffffff;
 }
 
 .nav li a {
-display: block;
-line-height: 5px;
+  display: block;
+  line-height: 5px;
 }
 
 #nav_id {
-font-family: "Roboto", sans-serif;
-font-size: 13px;
-text-transform: uppercase;
-letter-spacing: 0.3rem;
-color: rgba(255, 255, 255, 0.788);
-margin: 0 0 0 4px;
-z-index: 2;
-position: static;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: rgba(255, 255, 255, 0.788);
+  margin: 0 0 0 4px;
+  z-index: 2;
+  position: static;
 }
 
 #nav_id li {
-margin: 0 2rem;
+  margin: 0 2rem;
 }
 
 #nav_id a {
-color: rgb(0, 0, 0);
-position: relative;
+  color: rgb(0, 0, 0);
+  position: relative;
 }
 
 #nav_id a:hover,
 #nav_id a:focus,
 #nav_id a:active {
-color: #ffffff;
+  color: #ffffff;
 }
 
 /* ----------------------- button nav bar floating ----------------------- */
@@ -175,7 +174,7 @@ color: #ffffff;
   display: inline-block;
   width: 100px;
   height: 100px;
-  text-align:left;
+  text-align: left;
   border-radius: 4px;
   position: fixed;
   top: 100px;
@@ -191,135 +190,149 @@ color: #ffffff;
 /* ----------------------------- footer ----------------------------------- */
 
 .footer {
-/* height: 50px; */
-/* margin-top: 50vh; */
-padding-left: 30%;
-padding-bottom: 10%;
+  /* height: 50px; */
+  /* margin-top: 50vh; */
+  padding-left: 30%;
+  padding-bottom: 10%;
 
-grid-column: 1;
-grid-row: 6;
+  grid-column: 1;
+  grid-row: 6;
 
-color: #ffe600;
+  color: #ffe600;
 }
 
 /* ----------------------------- about me ---------------------------------- */
 .about_me {
-grid-column: 1/3;
-grid-row: 4/5;
-padding-top: 200px;
-padding-left: 100px;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  padding-top: 200px;
+  padding-left: 100px;
 
-/* background-color: #3f6338; */
+  /* background-color: #3f6338; */
 
-background: linear-gradient(-60deg, #ff7b00, #e73c7e, #ff7300);
-background-size: 400% 400%;
-animation: gradient 20s ease infinite;
-
+  background: linear-gradient(-60deg, #ff7b00, #e73c7e, #ff7300);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
 }
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
 #about-us {
-font-family: "Roboto", sans-serif;
-font-size: 30px;
-text-transform: uppercase;
-letter-spacing: 0.3rem;
-margin: 0 0 0 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 0 0 0 4px;
 }
 
-#about-us p  {
+#about-us p {
   color: darkblue;
 }
 
+#about-me-id {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  letter-spacing: 0.3rem;
+  color: rgb(0, 0, 0);
+  margin: 0 0 0 4px;
+  text-transform: uppercase;
+}
+
+#xmas_pic{
+  width: 750px;
+  padding-left: 7%;  
+}
 /* --------------------------- about me video ------------------------------ */
 .about_me_video {
-grid-column: 3/5;
-grid-row: 4/5;
-padding-top: 200px;
-padding-left: 50px;
+  grid-column: 3/5;
+  grid-row: 4/5;
+  padding-top: 200px;
+  padding-left: 50px;
 
-display: grid;
-grid-gap: 20px;
-grid-template-columns: 250px 250px 1fr 1fr;
-grid-template-rows: 100px 200px 1fr 300px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 250px 250px 1fr 1fr;
+  grid-template-rows: 100px 200px 1fr 300px;
 }
 
 .vid_title {
-grid-column: 1/5;
-grid-row: 1;
+  grid-column: 1/5;
+  grid-row: 1;
 }
 
 .vid1 {
-grid-column: 3/4;
-grid-row: 2/3;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 #vid1_size {
-width: 500px;
-height: 282px;
+  width: 500px;
+  height: 282px;
 
-border-color: #ffffff;
-border-style: solid;
-border-width: 10px;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 10px;
 }
 
 .vid2 {
-grid-column: 1/3;
-grid-row: 3/4;
+  grid-column: 1/3;
+  grid-row: 3/4;
 }
 
 #vid2_size {
-width: 500px;
-height: 890px;
+  width: 500px;
+  height: 890px;
 
-border: #e5ff00;
-border-style: solid;
-border-width: 10px;
+  border: #e5ff00;
+  border-style: solid;
+  border-width: 10px;
 }
 
 .vid3 {
-grid-column: 3/5;
-grid-row: 3;
+  grid-column: 3/5;
+  grid-row: 3;
 }
 
 #vid3_size {
-width: 300px;
-height: 300px;
-margin-left: 50px;
-margin-top: 300px;
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  margin-top: 300px;
 
-border: #0051ff;
-border-style: solid;
-border-width: 10px;
+  border: #0051ff;
+  border-style: solid;
+  border-width: 10px;
 }
 
 .vid4 {
-grid-column: 2/3;
-grid-row: 4;
+  grid-column: 2/3;
+  grid-row: 4;
 }
 
 #vid4_size {
-width: 700px;
-height: 395px;
+  width: 700px;
+  height: 395px;
 
-border: #ffffff;
-border-style: solid;
-border-width: 10px;
+  border: #ffffff;
+  border-style: solid;
+  border-width: 10px;
 }
 
 .inactiveLink {
-pointer-events: none;
-cursor: default;
+  pointer-events: none;
+  cursor: default;
 }
 
 /* --------------------------- contact me ---------------------------------- */
@@ -330,81 +343,85 @@ cursor: default;
   padding-left: 100px;
 }
 
-#about-us {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-  /* text-transform: uppercase; */
-  /* text-transform: lowercase; */
-  letter-spacing: 0.3rem;
-  color: rgb(0, 0, 0);
-  margin: 0 0 0 4px;
+.contact_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  grid-template-areas: ". .";
+}
+
+.email_container{
+  grid-template-columns: 1/2;
+  grid-template-rows: 1/2;
 }
 
 /* -------------------------- side panel --------------------- */
 .left-bar {
-left: 0;
-top: 0;
-background: #ffffff;
-width: 80px;
-height: 100%;
-color: rgb(0, 0, 0);
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  width: 80px;
+  height: 100%;
+  color: rgb(0, 0, 0);
 }
 
 .fixed-bar {
-position: fixed;
-z-index: 1000;
+  position: fixed;
+  z-index: 1000;
 }
 
 .left-bar .top-icon {
-background: rgb(199, 199, 199);
-/* height: 100px; */
-width: 200px;
+  background: rgb(199, 199, 199);
+  /* height: 100px; */
+  width: 200px;
 }
 
 .left-bar .top-icon,
 .left-bar .bottom-icon {
-display: flex;
--webkit-box-pack: center;
-justify-content: center;
--webkit-box-align: center;
-align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 .left-bar .center-text {
-height: calc(100% - 185px);
-position: relative;
+  height: calc(100% - 185px);
+  position: relative;
 }
 
 .left-bar .center-text p {
-white-space: nowrap;
-position: absolute;
-bottom: 80px;
-left: 0;
-transform-origin: 0 0;
-transform: rotate(270deg);
-margin-left: 30px;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+  margin-left: 30px;
 }
 
 .left-bar .center-text .medium {
-font-weight: bold;
+  font-weight: bold;
 }
 
 #top_logo_size {
-width: 900px;
-padding-left: 100px;
-padding-top: 50%;
-/* background-color: #c95b01; */
-/* background-color: rgba(247, 164, 144, 0.685); */
-/* padding: 30px; */
-/* border-style:solid; */
-/* border-color: #ffe600; */
-/* border-width: 3px; */
+  width: 900px;
+  padding-left: 100px;
+  padding-top: 60%;
+  /* background-color: #c95b01; */
+  /* background-color: rgba(247, 164, 144, 0.685); */
+  /* padding: 30px; */
+  /* border-style:solid; */
+  /* border-color: #ffe600; */
+  /* border-width: 3px; */
 }
 
 #botton_logo_size {
-width: 50px;
-position: fixed;
-bottom: 20px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
 }
 
 /*------------------------------------ contact me -------------------- */
@@ -414,7 +431,7 @@ bottom: 20px;
   font-family: "Roboto", sans-serif;
 }
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   background-color: #a2a2a2;
@@ -422,7 +439,7 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-}
+} */
 
 input,
 button,
@@ -434,10 +451,6 @@ textarea {
   -moz-box-shadow: none;
   box-shadow: none;
   padding: 5px;
-
-  /* &:focus {
-      outline: none;
-  } */
 }
 
 textarea {
@@ -450,36 +463,6 @@ button {
   font-weight: 500;
 }
 
-/* .feedback { */
-  /* &-card {
-      border: 1px solid black;
-      max-width: 980px;
-      background-color: #fff;
-      margin: 0 auto;
-      box-shadow: $shadow;
-  } */
-  /* &-header {
-      text-align: center;
-      padding: 8px;
-      font-size: 14px;
-      font-weight: 700;
-      border-bottom: 1px solid black;
-  } */
-  /* &-body {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-
-      &__message {
-          margin-top: 10px;
-      }
-
-      button {
-          margin-top: 10px;
-          align-self: flex-end;
-      }
-  } */
-/* } */
 
 /* ----------------------------------------------------------------------------------------------*/
 /* -----------------------------------------resposive section ---------------------------------- */
@@ -489,25 +472,25 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    overflow:auto;
+    overflow: auto;
   }
 
-  #about, .about_me{
-     grid-column: 1/5;
-    grid-row:span;
+  #about,
+  .about_me {
+    grid-column: 1/5;
+    grid-row: span;
 
     /* size: 21px; */
-
   }
-  
+
   .about_me_video {
     visibility: hidden;
   }
 
-  #button{
+  #button {
     visibility: hidden;
   }
-  
+
   .contact {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -518,8 +501,8 @@ button {
     grid-row: 4;
   }
 
-  .top-icon, #top_logo_size{
+  .top-icon,
+  #top_logo_size {
     width: 250px;
   }
-
 }
