@@ -69,15 +69,28 @@ em{
 
 /* -------------------------grid layout for full site  -------------------------- */
 .container_website {
-display: grid;
-/* 4 COLUMNS  */
+/* display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-/* 6 ROWS  */
 grid-template-rows: 50px 100px auto 1000px auto 50px;
 grid-column-gap: 10px;
-grid-row-gap: 10px;
-justify-items: stretch;
-align-items: stretch;
+grid-row-gap: 10px; */
+/* justify-items: stretch; */
+/* align-items: stretch; */
+
+
+  display: grid; 
+/* grid-auto-flow: row dense;  */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 10vh 1fr 1fr 1fr 1fr; 
+  gap: 10px 10px; 
+  grid-template-areas:  
+  ". . . ."
+  ". . . ."
+  ". . . ."
+  ". . . ."
+  ". . . ."
+  ". . . .";
+
 }
 
 /*  ---------------------------------- logo  ---------------------------------------*/
@@ -170,20 +183,16 @@ color: #ffffff;
   z-index: 1000;
 }
 
-/* ------------------------------------ sections ---------------------------------- */
-/* .container_sections { */
-/* height: 100%; */
-/* overflow: scroll; */
+/* ------------------------------------ logo icon ------------------------------ */
+/* #logo_icon{
 
-/* grid-column: 1/-4;
-  grid-row: 3/5; */
-/* } */
+} */
 
 /* ----------------------------- footer ----------------------------------- */
 
 .footer {
-height: 50px;
-margin-top: 50vh;
+/* height: 50px; */
+/* margin-top: 50vh; */
 padding-left: 30%;
 padding-bottom: 10%;
 
@@ -235,7 +244,7 @@ margin: 0 0 0 4px;
 /* --------------------------- about me video ------------------------------ */
 .about_me_video {
 grid-column: 3/5;
-grid-row: 4;
+grid-row: 4/5;
 padding-top: 200px;
 padding-left: 50px;
 
@@ -317,7 +326,7 @@ cursor: default;
 .contact_me {
   grid-column: 1/3;
   grid-row: 5/6;
-  padding-top: 50px;
+  padding-top: 250px;
   padding-left: 100px;
 }
 
@@ -474,16 +483,43 @@ button {
 
 /* ----------------------------------------------------------------------------------------------*/
 /* -----------------------------------------resposive section ---------------------------------- */
-/* header { */
-  /* display: flex; */
-  /* align-items: center; */
-/* } */
 
-@media (min-width: 1000px) {
- .container_website {
+@media (max-width: 1400px) {
+  .container_website {
     display: grid;
-    grid-column: 1fr;
-    grid-row: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    overflow:auto;
   }
+
+  #about, .about_me{
+     grid-column: 1/5;
+    grid-row:span;
+
+    /* size: 21px; */
+
+  }
+  
+  .about_me_video {
+    visibility: hidden;
+  }
+
+  #button{
+    visibility: hidden;
+  }
+  
+  .contact {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .footer {
+    grid-column: 1/2;
+    grid-row: 4;
+  }
+
+  .top-icon, #top_logo_size{
+    width: 250px;
+  }
+
 }
