@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* --------------------------------- body -------------------------------------------- */
 body {
 margin: 0;
 padding: 0;
@@ -471,4 +472,18 @@ button {
   } */
 /* } */
 
+/* ----------------------------------------------------------------------------------------------*/
+/* -----------------------------------------resposive section ---------------------------------- */
+/* header { */
+  /* display: flex; */
+  /* align-items: center; */
+/* } */
 
+@media (min-width: 1000px) {
+ .container_website {
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+}
