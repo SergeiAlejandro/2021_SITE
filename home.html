@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sergei Siller">
-    <meta name="keywords" content="Cool, Pretty, SergeiAlejandro">
+    <meta name="keywords" content="SergeiAlejandro">
     <meta name="description" content="Assignment03">
+    <link rel="shortcut icon" type="image/jpg" href="images/logo_icon.png" />
     <title>SergeiAlejandro</title>
     <link rel="stylesheet" href="css/main.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -23,8 +25,8 @@
         <div id="button">
             <div class="nav" id="nav_id">
                 <ul>
-                    <li><a href="#homeclick">Home</a></li>
-                    <li><a href="#aboutclick">About</a></li>
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="#homeclick">About</a></li>
                     <li><a href="#contactclick">Contact</a></li>
                 </ul>
             </div>
@@ -55,7 +57,7 @@
                 <br><br>
                 <em> I also love christmas and halloween, but more christmas.</em>
                 <br><br>
-                <img src="./images/free_xmas.jpg" id="xmas_pic" alt="christmas decorations">
+                <img src="./images/santa_claus_free.png" id="xmas_pic" alt="christmas decorations">
             </p>
         </div>
 
@@ -78,7 +80,7 @@
 
                 <div class="contact_form">
                     <form class="feedback-body">
-                        <input type="email" class="email_container" placeholder="Email"/>
+                        <input type="email" class="email_container" placeholder="Email" />
                         <textarea type="text" class="feedback-body-message" placeholder="Message"></textarea>
                         <button class="feedback-body-submit">SEND</button>
                     </form>
@@ -148,12 +150,35 @@
         <div class="back_to_top">
             <a title="Back to Top" href="#top"></a>
         </div>
-        <!-- </footer> -->
 
 
     </div>
 
+
+
+    <!----------------------------------------------- background music --------------------------------->
     <audio autoplay="true" src="/images/free_music.mp3"></audio>
+
+
+
+    <!--------------------------------------- hamburger navigation  ------------------------------------->
+    <ul class="menu" id="menu">
+        <li><a href="landingpage.html">Home</a></li>
+        <li><a href="#aboutclick">About</a></li>
+        <li><a href="#contactclick">Contact</a></li>
+        <a class="close" href="#">
+            <span class="material-icons">
+                close
+            </span>
+        </a>
+    </ul>
+    <a class="hamburger" href="#menu">
+        <span class="material-icons">
+            menu
+        </span>
+    </a>
+
+
 
 </body>
 

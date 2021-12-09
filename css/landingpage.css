@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, Roboto;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/landingpage.jpg") center center fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-right: 0%;
+}
+
+a {
+  margin: 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 1000;
+}
+
+a:hover {
+  color: rgb(255, 251, 0);
+}
+
+img {
+  width: 200px;
+}
+
+.audio {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
