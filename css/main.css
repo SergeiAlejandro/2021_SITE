@@ -7,6 +7,7 @@ margin: 0;
 padding: 0;
 font-family: Verdana, Geneva, sans-serif;
 background: url("/images/background.jpg") no-repeat center center fixed;
+background-blend-mode:color-burn;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -58,10 +59,13 @@ color: rgb(255, 255, 255);
 margin: 0 0 0 4px;
 }
 
+
 em{
   font-weight: bolder;
   color:rgb(167, 16, 79);
 }
+
+
 /* -------------------------grid layout for full site  -------------------------- */
 .container_website {
 display: grid;
@@ -116,7 +120,7 @@ list-style: none;
 margin-left: 0;
 margin-top: 18px;
 font-size: 20px;
-border-style: dashed;
+border-style: solid;
 border-width: 5px;
 border-color: #ffffff;
 }
@@ -197,9 +201,9 @@ padding-left: 100px;
 
 /* background-color: #3f6338; */
 
-background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background: linear-gradient(-60deg, #ff7b00, #e73c7e, #ff7300);
 background-size: 400% 400%;
-animation: gradient 15s ease infinite;
+animation: gradient 20s ease infinite;
 
 }
 
@@ -235,8 +239,8 @@ padding-top: 200px;
 padding-left: 50px;
 
 display: grid;
-grid-gap: 5px;
-grid-template-columns: 400px 300px 100px;
+grid-gap: 20px;
+grid-template-columns: 250px 250px 1fr 1fr;
 grid-template-rows: 100px 200px 1fr 300px;
 }
 
@@ -246,13 +250,17 @@ grid-row: 1;
 }
 
 .vid1 {
-grid-column: 2/3;
+grid-column: 3/4;
 grid-row: 2/3;
 }
 
 #vid1_size {
-width: 700px;
-height: 300px;
+width: 500px;
+height: 282px;
+
+border-color: #ffffff;
+border-style: solid;
+border-width: 10px;
 }
 
 .vid2 {
@@ -261,30 +269,42 @@ grid-row: 3/4;
 }
 
 #vid2_size {
-width: 600px;
-height: 900px;
+width: 500px;
+height: 890px;
+
+border: #e5ff00;
+border-style: solid;
+border-width: 10px;
 }
 
 .vid3 {
-grid-column: 2/4;
+grid-column: 3/5;
 grid-row: 3;
 }
 
 #vid3_size {
-width: 600px;
-height: 400px;
-padding-left: 50px;
-padding-top: 50px;
+width: 300px;
+height: 300px;
+margin-left: 50px;
+margin-top: 300px;
+
+border: #0051ff;
+border-style: solid;
+border-width: 10px;
 }
 
 .vid4 {
 grid-column: 2/3;
-grid-row: 3;
+grid-row: 4;
 }
 
 #vid4_size {
 width: 700px;
-height: 1200px;
+height: 395px;
+
+border: #ffffff;
+border-style: solid;
+border-width: 10px;
 }
 
 .inactiveLink {
@@ -450,3 +470,5 @@ button {
       }
   } */
 /* } */
+
+
