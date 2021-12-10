@@ -330,8 +330,10 @@ grid-row-gap: 10px; */
 }
 
 .inactiveLink {
+  /* pointer-events: none; */
   pointer-events: none;
-  cursor: default;
+  /* cursor: default; */
+  cursor: crosshair;
 }
 
 
@@ -363,6 +365,16 @@ grid-row-gap: 10px; */
 }
 
 
+/*---------------------------------- audio -------------------------------------- */
+audio {
+  padding-left: 115px;
+  width: 85px;
+  height: 25px;
+  opacity: 100%;
+  background-color: #f3f2f2;
+}
+
+  
 /* ------------------------------------ side panel ------------------------------ */
 .left-bar {
   left: 0;
