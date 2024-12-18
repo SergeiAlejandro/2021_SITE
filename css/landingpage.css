@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/images/landingpage.jpg") center center fixed;
+  background: url("../images/landingpage.jpg") center center fixed;
   width: 100%;
   height: 100%;
   z-index: 0;
